@@ -1,4 +1,0 @@
-TaskOnTop
-=========
-
-Simple Task Manager
