@@ -58,6 +58,8 @@ public class ToDoItem {
 			mDate = new Date();
 		}
 	}
+	
+	// Not sure I use all these, check? Convenience?
 
 	public String getTitle() {
 		return mTitle;

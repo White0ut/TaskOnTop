@@ -22,6 +22,8 @@ import com.whiteout.task.ToDoItem.Status;
 public class ToDoListAdapter extends BaseAdapter {
 
 	// List of ToDoItems
+	
+	// TODO: Consider new way to store, allow for sorting?
 	private final List<ToDoItem> mItems = new ArrayList<ToDoItem>();
 	private final Context mContext;
 	private static final String TAG = "Whiteout-Debug";

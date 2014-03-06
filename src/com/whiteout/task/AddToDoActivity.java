@@ -23,6 +23,7 @@ import android.widget.TimePicker;
 import com.whiteout.task.ToDoItem.Priority;
 import com.whiteout.task.ToDoItem.Status;
 
+
 public class AddToDoActivity extends Activity {
 
 	private static final int SEVEN_DAYS = 604800000;
@@ -50,8 +51,7 @@ public class AddToDoActivity extends Activity {
 		timeView = (TextView) findViewById(R.id.time);
 		log("Initialized vars");
 
-		// Set default date and time
-
+		// Set the time
 		setDefaultDateTime();
 
 		// OnClickListener for the Date button, calls showDatePickerDialog()
@@ -117,8 +117,13 @@ public class AddToDoActivity extends Activity {
 
 				// Get all necessary data
 				Priority priority = getPriority();
+				
 				Status status = Status.NOTDONE;
-				String titleString = mTitleText.getText().toString();
+				
+				// Caps the first letter 
+				String str = mTitleText.getText().toString();
+				String titleString = Character.toUpperCase(str.charAt(0)) + str.substring(1);
+				
 				String date = dateString + " " + timeString;
 
 				// Package data
@@ -181,7 +186,7 @@ public class AddToDoActivity extends Activity {
 			min = "0" + minute;
 
 		// You could optionally include milli, not necessary here
-		timeString = hour + ":" + min + ":00";
+		timeString = hour + ":" + min;
 
 	}
 
