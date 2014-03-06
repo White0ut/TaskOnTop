@@ -1,4 +1,7 @@
-This is meant to be a simple TaskManager I threw together in about a day, looking to expand on it a little once I have more time.
+# TaskOnTop
 
-TODO: Sort the todo list base on priority
-TODO: Enable notifications based on due dates / possibly incorporate alarms
+TaskOnTop is meant to be a simple TaskManager I threw together in about a day from an old project I had sitting around, I knew I would use it a lot and it fits my needs, looking to expand on it a little once I have more time.
+
+## TODO: 
+- Sort the todo list base on priority
+- Enable notifications based on due dates / possibly incorporate alarms
