@@ -24,6 +24,7 @@ public class ToDoListAdapter extends BaseAdapter {
 	// List of ToDoItems
 	
 	// TODO: Consider new way to store, allow for sorting?
+	// Create custom List, needs to be sorted on Priority, then due date
 	private final List<ToDoItem> mItems = new ArrayList<ToDoItem>();
 	private final Context mContext;
 	private static final String TAG = "Whiteout-Debug";
