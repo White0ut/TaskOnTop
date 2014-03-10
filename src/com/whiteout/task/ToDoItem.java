@@ -12,11 +12,11 @@ public class ToDoItem {
 	public static final String ITEM_SEP = System.getProperty("line.separator");
 
 	public enum Priority {
-		LOW, MED, HIGH
+		HIGH, MED, LOW
 	};
 
 	public enum Status {
-		NOTDONE, DONE
+		DONE, NOTDONE
 	};
 
 	public final static String TITLE = "title";

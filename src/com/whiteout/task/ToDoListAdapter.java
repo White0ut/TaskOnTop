@@ -1,6 +1,7 @@
 package com.whiteout.task;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import android.content.Context;
@@ -38,6 +39,7 @@ public class ToDoListAdapter extends BaseAdapter {
 
 	public void add(ToDoItem item) {
 		mItems.add(item);
+		Collections.sort(mItems, new ToDoComparator());
 		notifyDataSetChanged();
 	}
 
@@ -53,6 +55,7 @@ public class ToDoListAdapter extends BaseAdapter {
 		for(int i=0; i<mItems.size(); i++){
 			mItems.get(i).setPosition(i);
 		}
+		Collections.sort(mItems, new ToDoComparator());
 		notifyDataSetChanged();
 	}
 
