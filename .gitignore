@@ -16,6 +16,11 @@ local.properties
 .settings/
 .loadpath
 
+#java 
+gen
+build
+gradlew*
+*.iml
 
 # External tool builders
 .externalToolBuilders/
